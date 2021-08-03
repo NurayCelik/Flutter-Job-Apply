@@ -2,16 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class RemoteokService {
-  /*
-  Repository _repository;
 
-  BlogPostService(){
-    _repository = Repository();
-  }
-
-  getAllBlogPosts() async {
-    return await _repository.httpGet('get-all-blog-posts');
-  } */
 
   Future<List<dynamic>> getAllRemote() async {
     final url =
