@@ -5,7 +5,6 @@ import '../models/remoteok.dart';
 class RemoteokProvider with ChangeNotifier {
   List<RemoteOk> _items = [];
   var isLoading = false;
-  List<String> myTags = [];
   List<RemoteOk> get items {
     return [..._items];
   }
@@ -24,7 +23,7 @@ class RemoteokProvider with ChangeNotifier {
     }
     _items = response
         .map((item) => RemoteOk(
-              //Map i biz oluşturduk classtaki mape gerek kalmadı
+              
               id: item["id"].toString(),
               slug: item["slug"].toString(),
               date: item["date"],
